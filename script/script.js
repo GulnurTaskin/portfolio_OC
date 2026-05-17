@@ -148,16 +148,19 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.getElementById("navbarSupportedContent");
 const heroText = document.querySelector(".hero-text");
 
-if (navbarMenu && heroText) {
+// Gestion de l'affichage du texte principal lors de l'ouverture du menu mobile
+if (navbarToggler && navbarMenu && heroText) {
 
-    navbarMenu.addEventListener("show.bs.collapse", () => {
-        heroText.classList.add("hero-hidden");
+    // Masque le hero text lorsque le menu mobile est ouvert
+    navbarToggler.addEventListener("click", () => {
+        setTimeout(() => {
+            if (navbarMenu.classList.contains("show")) {
+                heroText.classList.add("hero-hidden");
+            } else {
+                heroText.classList.remove("hero-hidden");
+            }
+        }, 250);
     });
-
-    navbarMenu.addEventListener("hide.bs.collapse", () => {
-        heroText.classList.remove("hero-hidden");
-    });
-}
 
     // Réaffiche le hero text après un clic sur un lien du menu
     document.querySelectorAll(".nav-link").forEach((link) => {
