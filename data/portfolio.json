@@ -1,20 +1,26 @@
 [
-    {
-        "image": "image1.png",
-        "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image2.png",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    },
-    {
-        "image": "image3.png",
-        "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
-    }
+  {
+    "title": "",
+    "text": "Intégration responsive HTML/CSS à partir d’une maquette Figma",
+    "image": "image1.png",
+    "link": "https://github.com/GulNurTaskin/siteDeAgenceVoyage-Booki"
+  },
+  {
+    "title": "",
+    "text": "Portfolio dynamique en JavaScript avec manipulation du DOM",
+    "image": "sophieBluel.png",
+    "link": "https://github.com/GulNurTaskin/SophieBluel"
+  },
+  {
+    "title": "",
+    "text": "Application React avec composants dynamiques et React Router",
+    "image": "image3.png",
+    "link": "https://github.com/GulnurTaskin/kasa-react"
+  },
+  {
+    "title": "",
+    "text": "Tests E2E et API automatisés avec Cypress",
+    "image": "ecoBlissBath.png",
+    "link": "https://github.com/GulNurTaskin/oc-qa-automation-cypress"
+  }
 ]
