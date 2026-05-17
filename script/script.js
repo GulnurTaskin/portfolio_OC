@@ -1,4 +1,4 @@
-// Function to add the "navbarDark" class to the navbar on scroll
+// Fonction qui ajoute une classe sombre à la navbar lors du scroll
 function handleNavbarScroll() {
     const header = document.querySelector(".navbar");
     window.onscroll = function () {
@@ -11,7 +11,7 @@ function handleNavbarScroll() {
     };
 }
 
-// Function to handle navbar collapse on small devices after a click
+// Fonction qui ferme automatiquement le menu navbar sur mobile après un clic
 function handleNavbarCollapse() {
     const navLinks = document.querySelectorAll(".nav-item");
     const menuToggle = document.getElementById("navbarSupportedContent");
@@ -23,20 +23,22 @@ function handleNavbarCollapse() {
     });
 }
 
-// Function to dynamically create HTML elements from the JSON file
+// Fonction qui génère dynamiquement les cartes de compétences à partir du fichier JSON
 function createSkillsFromJSON() {
     const container = document.querySelector("#skills .container");
     let row = document.createElement("div");
     row.classList.add("row");
 
-    // Load the JSON file
+    // Chargement du fichier JSON
     fetch("data/skills.json")
         .then((response) => response.json())
         .then((data) => {
-            // Iterate through the JSON data and create HTML elements
+
+            // Parcours des données JSON pour créer les cartes HTML
             data.forEach((item, index) => {
                 const card = document.createElement("div");
                 card.classList.add("col-lg-4", "mt-4");
+
                 card.innerHTML = `
                     <div class="card skillsText">
                         <div class="card-body">
@@ -47,25 +49,29 @@ function createSkillsFromJSON() {
                     </div>
                 `;
 
-                // Append the card to the current row
+                // Ajout de la carte dans la ligne actuelle
                 row.appendChild(card);
 
-                // If the index is a multiple of 3 or it's the last element, create a new row
+                // Création d'une nouvelle ligne toutes les 3 cartes
                 if ((index + 1) % 3 === 0 || index === data.length - 1) {
                     container.appendChild(row);
+
                     row = document.createElement("div");
                     row.classList.add("row");
                 }
             });
         });
 }
-// Function to dynamically create HTML elements from the JSON file
+
+// Fonction qui génère dynamiquement les cartes de projets à partir du fichier JSON
 function createPortfolioFromJSON() {
     const container = document.querySelector("#portfolio-container");
 
     fetch("data/portfolio.json")
         .then((response) => response.json())
         .then((data) => {
+
+            // Parcours des projets pour créer les cartes HTML
             data.forEach((item) => {
                 const card = document.createElement("div");
 
@@ -82,11 +88,13 @@ function createPortfolioFromJSON() {
                     </div>
                 `;
 
+                // Ajout de la carte dans le container portfolio
                 container.appendChild(card);
             });
         });
 }
-// Call the functions to execute the code
+
+// Exécution des fonctions principales au chargement de la page
 handleNavbarScroll();
 handleNavbarCollapse();
 //createSkillsFromJSON();
@@ -95,6 +103,7 @@ createPortfolioFromJSON();
 const heroBlock = document.getElementById("heroBlock");
 const heroResult = document.getElementById("heroResult");
 
+// Animation qui affiche le résultat attendu après un clic sur le bloc principal
 if (heroBlock && heroResult) {
     heroBlock.addEventListener("click", () => {
         heroBlock.style.opacity = "0";
@@ -105,8 +114,10 @@ if (heroBlock && heroResult) {
         }, 800);
     });
 }
+
 const actionLink = document.getElementById("actionLink");
 
+// Réinitialisation de l'animation du hero lors d'un clic sur le lien Action
 if (actionLink) {
     actionLink.addEventListener("click", () => {
         heroResult.classList.remove("show");
@@ -122,6 +133,7 @@ if (actionLink) {
 const walkingBug = document.querySelector(".walking-bug");
 const homeSection = document.querySelector("#home");
 
+// Affichage du bug animé uniquement après la section d'accueil
 window.addEventListener("scroll", () => {
     const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
 
@@ -131,3 +143,29 @@ window.addEventListener("scroll", () => {
         walkingBug.classList.add("show-bug");
     }
 });
+
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.getElementById("navbarSupportedContent");
+const heroText = document.querySelector(".hero-text");
+
+// Gestion de l'affichage du texte principal lors de l'ouverture du menu mobile
+if (navbarToggler && navbarMenu && heroText) {
+
+    // Masque le hero text lorsque le menu mobile est ouvert
+    navbarToggler.addEventListener("click", () => {
+        setTimeout(() => {
+            if (navbarMenu.classList.contains("show")) {
+                heroText.classList.add("hero-hidden");
+            } else {
+                heroText.classList.remove("hero-hidden");
+            }
+        }, 250);
+    });
+
+    // Réaffiche le hero text après un clic sur un lien du menu
+    document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+            heroText.classList.remove("hero-hidden");
+        });
+    });
+}

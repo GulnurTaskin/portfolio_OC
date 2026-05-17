@@ -231,6 +231,14 @@
     display: block;
     opacity: 1;
 }
+.hero-text.hero-hidden {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hero-text {
+    transition: opacity 0.4s ease;
+}
 .section-title {
     font-size: 2.7rem;
 
