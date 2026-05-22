@@ -43,7 +43,7 @@
 }
 
 .navbarDark {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgb(138, 131, 243) !important;
 }
 
 
@@ -227,8 +227,6 @@
     color: white;
     transition: opacity 0.s ease;
     padding-top: 200px;
-
-
 }
 
 .hero_title {
@@ -336,7 +334,10 @@
         transform: rotate(0deg);
     }
 }
-
+#about .container {
+    padding-left: 20px;
+    padding-right: 0px;
+}
 .imageAboutPage {
     width: 100%;
 }
@@ -510,6 +511,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .skill-card {
@@ -561,60 +564,33 @@
     color: white;
 }
 
-@media (max-width: 768px) {
-
-    .hero_title,
-    .hero_result h2 {
-        font-size: 2.8rem;
-    }
-
-    .hero_desc,
-    .hero_result h3 {
-        font-size: 1.4rem;
-    }
-
-    .bgimage {
-        min-height: 100vh;
-        max-height: none;
-        padding: 0 20px;
-    }
-
-    .navbar-brand,
-    .navbar-nav .nav-link {
-        font-size: 1.3rem !important;
-    }
-
-    .portfolio-container,
-    .oc-grid,
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+* {
+    box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
-
-    .hero_title,
-    .hero_result h2 {
-        font-size: 2.2rem;
-    }
-
-    .hero_desc,
-    .hero_result h3 {
-        font-size: 1.1rem;
-    }
-
-    .section-title,
-    .aboutTitle {
-        font-size: 2rem;
-    }
-
-    .story-card,
-    .skill-card,
-    .oc-card {
-        padding: 18px;
-    }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+main,
+section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container,
+.container-fluid,
+.row {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* portfolio */
 #portfolio p {
@@ -727,3 +703,96 @@
 }
 
 /* footer */
+footer {
+    background-color: #f1f3f5;
+    color: #111827;
+    padding: 24px 16px;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bgimage {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text {
+        padding-top: 200px;
+        min-height: 300px;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .hero_title {
+        font-size: 3rem;
+    }
+
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-container,
+    .skills-grid,
+    .oc-grid {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    .skill-card,
+    .portfolioContent,
+    .oc-card,
+    .story-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    @media (max-width: 768px) {
+    .portfolioContent .card-img-top {
+        height: 180px;
+        object-fit: contain;
+        background-color: #f8f9fa;
+    }
+}
+    .navbar-nav {
+        gap: 8px;
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        font-size: 1.3rem !important;
+    }
+
+    .shooting-star,
+    .shooting-star2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_title {
+        font-size: 2.4rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+
+    .section-title,
+    .aboutTitle {
+        font-size: 2rem;
+    }
+}
