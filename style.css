@@ -593,6 +593,8 @@ img {
 }
 
 /* portfolio */
+
+
 #portfolio p {
     text-align: center;
 }
@@ -638,6 +640,9 @@ img {
 
 .oc-section {
     margin-top: 80px;
+   padding-bottom: 40px;
+
+    min-height: 320px;
 }
 
 .oc-title {
@@ -655,12 +660,15 @@ img {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 18px;
+     
+    align-items: start;
 }
 
 .oc-card {
     display: flex;
     align-items: center;
     gap: 14px;
+      height: auto;
 
     background-color: white;
 
