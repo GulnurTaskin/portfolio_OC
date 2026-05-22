@@ -33,13 +33,13 @@
 
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent !important;
     padding: 8px 14px;
     border-radius: 12px;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.85) !important;
+    background-color: transparent !important;
 }
 
 .navbarDark {
@@ -48,9 +48,13 @@
 
 
 .navbar-brand {
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem !important;
+      font-weight: 500;
+    background-color: transparent !important;
     padding: 8px 14px;
     border-radius: 12px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+   
 }
 
 .stars,
@@ -179,9 +183,10 @@
 .bgimage {
     height: 100vh;
     max-height: 900px;
-    background: url("images/image1.jpg");
+    background: url("images/galaxy.webp");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
 
     display: flex;
@@ -193,7 +198,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+   display: none;
     z-index: 1;
 }
 
