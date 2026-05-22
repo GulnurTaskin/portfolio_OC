@@ -1,24 +1,24 @@
 [
   {
-    "title": "",
+    "title": "Booki",
     "text": "Intégration responsive HTML/CSS à partir d’une maquette Figma",
     "image": "image1.png",
     "link": "https://github.com/GulNurTaskin/siteDeAgenceVoyage-Booki"
   },
   {
-    "title": "",
+    "title": "Sophie Bluel",
     "text": "Portfolio dynamique en JavaScript avec manipulation du DOM",
     "image": "sophieBluel.png",
     "link": "https://github.com/GulNurTaskin/SophieBluel"
   },
   {
-    "title": "",
+    "title": "Kasa React",
     "text": "Application React avec composants dynamiques et React Router",
     "image": "image3.png",
     "link": "https://github.com/GulnurTaskin/kasa-react"
   },
   {
-    "title": "",
+    "title": "QA Automation Cypress",
     "text": "Tests E2E et API automatisés avec Cypress",
     "image": "ecoBlissBath.png",
     "link": "https://github.com/GulNurTaskin/oc-qa-automation-cypress"
