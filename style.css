@@ -207,6 +207,7 @@
     letter-spacing: 1px;
 }
 #heroBlock {
+    margin-top: 300px;
     cursor: pointer;
     transition: opacity 0.8s ease;
 }
