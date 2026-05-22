@@ -438,8 +438,33 @@
 }
 
 .chip-soft {
-    background-color: #d9f7df;
-    color: #123524;
+    background-color: #d8f3dc !important;
+    color: #0b2e1d !important;
+}
+
+.chip-soft i {
+    color: #0b2e1d !important;
+}
+
+.contactColumn i,
+.contact-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contact-button i {
+    color: #198754;
+}
+
+.contact-button:hover i {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.btn-success {
+    background-color: #0b5d3b !important;
+    border-color: #0b5d3b !important;
 }
 
 .skill-chips span {
