@@ -506,6 +506,10 @@
 }
 
 /* skills */
+#skills {
+    padding-bottom: 40px;
+    min-height: 500px;
+}
 
 .skills-grid {
     display: grid;
