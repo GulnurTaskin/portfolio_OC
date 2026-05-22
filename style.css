@@ -237,9 +237,7 @@
 }
 
 .hero_result {
-    opacity: 0;
     display: none;
-    transition: opacity 1s ease;
 }
 
 .hero_result h2 {
@@ -252,7 +250,6 @@
 
 .hero_result.show {
     display: block;
-    opacity: 1;
 }
 
 .hero-text.hero-hidden {
