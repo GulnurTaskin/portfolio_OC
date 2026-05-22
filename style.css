@@ -225,7 +225,7 @@
     width: 100%;
     text-align: center;
     color: white;
-    transition: opacity 0.s ease;
+    transition: opacity 0.4s ease;
     padding-top: 200px;
 }
 
