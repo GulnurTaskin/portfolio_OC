@@ -189,7 +189,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -216,7 +216,9 @@
     width: 100%;
     text-align: center;
     color: white;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.s ease;
+    
+    
 }
 
 .hero_title {
