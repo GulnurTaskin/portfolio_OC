@@ -49,12 +49,12 @@
 
 .navbar-brand {
     font-size: 1.5rem !important;
-      font-weight: 500;
+    font-weight: 500;
     background-color: transparent !important;
     padding: 8px 14px;
     border-radius: 12px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-   
+
 }
 
 .stars,
@@ -198,7 +198,7 @@
     content: "";
     position: absolute;
     inset: 0;
-   display: none;
+    display: none;
     z-index: 1;
 }
 
@@ -226,25 +226,27 @@
     text-align: center;
     color: white;
     transition: opacity 0.s ease;
+    padding-top: 200px;
 
 
 }
 
 .hero_title {
-    font-size: 4.5rem;
-    color: #ffffff !important;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 1);
+    font-size: 8rem;
+    color: #111111 !important;
+    text-shadow: none !important;
 }
 
 .hero_desc,
 .hero_result h2,
 .hero_result h3 {
-    color: #ffffff !important;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 1);
+    color: #111111 !important;
+    text-shadow: none !important;
 }
 
 .hero_desc {
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 1000;
 }
 
 .hero_result {
@@ -490,10 +492,16 @@
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: #111111 !important;
+    text-shadow: none !important;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 8px 14px;
     border-radius: 12px;
+    font-size: 2rem !important;
+}
+
+.navbar-nav {
+    gap: 18px;
 }
 
 /* skills */
