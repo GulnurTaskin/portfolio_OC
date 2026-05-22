@@ -334,10 +334,12 @@
         transform: rotate(0deg);
     }
 }
+
 #about .container {
     padding-left: 20px;
     padding-right: 0px;
 }
+
 .imageAboutPage {
     width: 100%;
 }
@@ -644,7 +646,7 @@ img {
 
 .oc-section {
     margin-top: 80px;
-   padding-bottom: 40px;
+    padding-bottom: 40px;
 
     min-height: 320px;
 }
@@ -664,7 +666,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 18px;
-     
+
     align-items: start;
 }
 
@@ -672,7 +674,7 @@ img {
     display: flex;
     align-items: center;
     gap: 14px;
-      height: auto;
+    height: auto;
 
     background-color: white;
 
@@ -728,6 +730,7 @@ footer p {
 
 
 @media (max-width: 768px) {
+
     html,
     body {
         width: 100%;
@@ -745,7 +748,7 @@ footer p {
     .hero-text {
         padding-top: 200px;
         min-height: 300px;
-        text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
 
     .hero_title {
@@ -767,18 +770,19 @@ footer p {
     .portfolioContent,
     .oc-card,
     .story-card {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     @media (max-width: 768px) {
-    .portfolioContent .card-img-top {
-        height: 180px;
-        object-fit: contain;
-        background-color: #f8f9fa;
+        .portfolioContent .card-img-top {
+            height: 180px;
+            object-fit: contain;
+            background-color: #f8f9fa;
+        }
     }
-}
+
     .navbar-nav {
         gap: 8px;
     }
